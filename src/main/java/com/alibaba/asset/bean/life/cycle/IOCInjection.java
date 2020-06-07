@@ -36,6 +36,6 @@ public class IOCInjection {
         steven.engage();
 
         System.out.println("============== spring 的注入方式  ============");
-        System.out.println("@Resource 或者 @Autowired 注入");
+        System.out.println("由 spring IOC 容器使用 @Resource 或者 @Autowired 注入，控制反转");
     }
 }

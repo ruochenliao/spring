@@ -4,10 +4,9 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 
 /**
- * bean 初始化之后可以做这些事情
+ * bean 初始化之后可以干预 bean 的初始化
  *
  * @author john
  */
