@@ -8,7 +8,7 @@ import lombok.Data;
 public class IOCInjection {
 
     @Data
-    static class HandsomeBody{
+    private static class HandsomeBody{
         private BeautifulGirl girlFirend;
 
         public void engage(){
@@ -17,7 +17,7 @@ public class IOCInjection {
     }
 
     @Data
-    static class BeautifulGirl{
+    private static class BeautifulGirl{
         private String name;
         private String requirement;
     }
@@ -34,5 +34,8 @@ public class IOCInjection {
         steven.setGirlFirend(alice);
         //开始使用
         steven.engage();
+
+        System.out.println("============== spring 的注入方式  ============");
+        System.out.println("@Resource 或者 @Autowired 注入");
     }
 }
